@@ -1,0 +1,49 @@
+
+
+.preloader .animated-preloader, .preloader .animated-preloader::before, .bill-items-wrapper .bill-items .nav-item.active .nav-link i, .bill-items-wrapper .bill-items .nav-item::after, .bill-items-wrapper .bill-items .nav-item:hover .nav-link i, .cmn-btn, .scroll-to-top .scroll-icon, .feature-card:hover .feature-card__icon, .social-links.style--two li a, .d-widget__icon, .d-widget::before, .d-widget__btn, .client-slider .slick-arrow:hover, .service-card:hover, .table thead{
+	background: #145BCD;
+}
+
+.header .main-menu li a:hover, .header .main-menu li a:focus, .section-top-title, .service-card__icon i, .feature-card__icon i, .overview-card__icon i, .social-links li a:hover, .page-breadcrumb li:first-child::before, .contact-card__header i, a:hover, .d-widget.style--two .d-widget__icon i{
+	color: #145BCD;
+}
+
+.overview-card__icon i {
+	text-shadow: 0 5px 10px #145BCD75;
+}
+
+.base--color, .header-account-list li a:hover{
+	color: #145BCD !important;
+}
+.profile-thumb .avatar-edit label {
+	background-color: #145BCD !important;
+	color: #fff !important;
+}
+.feature-card:hover .feature-card__icon{
+	box-shadow: 0 15px 35px #145BCD73;
+}
+
+.bg-primary, a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover{
+	background: #145BCD !important;
+}
+
+.form-control:focus {
+    border-color: #145BCD;
+    box-shadow: 0 0 5px #145BCD59;
+}
+
+.d-widget__icon::after{
+	border: 3px solid #145BCD;
+}
+
+.btn.focus, .btn:focus{
+	box-shadow: 0 0 0 0.2rem #145BCD40;;
+}
+
+.footer::before{
+	background-color: #062c4e;
+}
+
+.base--bg-two{
+	background-color: #062c4e !important;
+}
