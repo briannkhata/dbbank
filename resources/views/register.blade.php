@@ -16,11 +16,15 @@
                     <img src="{{ asset('images/logoIcon/logo6654.png?v1') }}" alt="image">
                 </a>
             </div>
-            <form class="account-form" action="https://script.viserlab.com/paylab/register" method="POST"
-                onsubmit="return submitUserForm();">
+            <div class="account-form d-flex justify-content-between mb-4">
+                <button class="cmn-btn email-btn">Email</button>
+                <button class="cmn-btn phone-btn inactive">Phone Number</button>
+            </div>
+            <form class="account-form" action="" method="POST" onsubmit="return submitUserForm();">
                 <input type="hidden" name="_token" value="mp0gpSYL4XxuAXJ2MNKM9eKJpxrDTsg3i4QIZHdW">
 
-                <div class="form-group">
+
+                {{-- <div class="form-group">
                     <div class="custom-icon-field">
                         <i class="las la-user-circle"></i>
                         <input type="text" id="firstname" class="form-control" placeholder="First Name" name="firstname"
@@ -33,15 +37,8 @@
                         <input type="text" name="lastname" class="form-control" id="lastname" name="lastname"
                             placeholder="Last Name" value="" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="custom-icon-field">
-                        <i class="las la-user"></i>
-                        <input type="text" name="username" id="username" class="form-control" placeholder="Username"
-                            name="username" value="" required>
-                    </div>
-                </div>
-                <div class="form-group">
+                </div> --}}
+                <div class="form-group phone-input d-none">
                     <div class="input-group">
                         <div class="input-group-prepend input-new-group">
                             <span class="input-group-text" id="basic-addon1">
@@ -345,13 +342,8 @@
                         <input type="text" placeholder="Mobile" name="mobile" class="form-control" required>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="custom-icon-field">
-                        <i class="las la-globe-americas"></i>
-                        <input type="text" name="country" readonly class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
+
+                <div class="form-group email-input">
                     <div class="custom-icon-field">
                         <i class="las la-envelope"></i>
                         <input id="email" type="email" name="email" value="" class="form-control"
@@ -377,7 +369,7 @@
                 </div>
 
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <input type="checkbox" id="accept_tos" name="checkbox" value="1" required="">
                     <label for="accept_tos" style="cursor: default !important;">I accept the
                         <a href="page/69/terms-and-policy.html" target="_blank" class="text-dark">
@@ -389,12 +381,13 @@
                             </strong>
                         </a>
                     </label>
-                </div>
+                </div> --}}
 
                 <div class="form-group">
                     <button type="submit" class="cmn-btn py-3 w-100">REGISTRATION NOW</button>
                 </div>
-                <a href="/login" class="base--color">Login here...</a>
+                <p>Already Have an Account? <a href="/login" class="base--color"><span class="auth-link">Login
+                            In</span></a></p>
             </form>
 
             <div class="account-footer text-center">

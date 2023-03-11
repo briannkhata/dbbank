@@ -45,11 +45,13 @@
     <link rel="stylesheet" href="{{ asset('css/line-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/vendor/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/vendor/slick.css') }}">
-    <link rel="stylesheet" href="css/main55d5.css?vers1.0">
+    <link rel="stylesheet" href="{{ asset('css/main55d5.css?vers1.0') }}">
 
-    <link rel="stylesheet" href="assets/templates/basic/css/bootstrap-fileinput.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-fileinput.css') }}">
 
-    <link rel="stylesheet" href="assets/templates/basic/css/color21be.css?color=145BCD&amp;secondColor=062c4e">
+    <link rel="stylesheet" href="{{ asset('css/color21be.css?color=145BCD&amp;secondColor=062c4e') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 
     <style>
@@ -204,6 +206,24 @@
                 window.location.href = "https://script.viserlab.com/paylab/change/" + $(this).val();
             });
         })(jQuery);
+    </script>
+
+    <script>
+        $(".phone-btn").click(function() {
+            $(".email-btn").addClass("inactive");
+            $(".phone-btn").removeClass("inactive");
+            $(".phone-input").removeClass("d-none");
+            $(".email-input").addClass("d-none");
+        });
+    </script>
+
+    <script>
+        $(".email-btn").click(function() {
+            $(".phone-btn").addClass("inactive");
+            $(".email-btn").removeClass("inactive");
+            $(".email-input").removeClass("d-none");
+            $(".phone-input").addClass("d-none");
+        });
     </script>
 
 </body>

@@ -16,8 +16,7 @@
                     <img src="{{ asset('images/logoIcon/logo6654.png?v1') }}" alt="image">
                 </a>
             </div>
-            <form class="account-form" method="POST" action="https://script.viserlab.com/paylab/login"
-                onsubmit="return submitUserForm();">
+            <form class="account-form" method="POST" action="" onsubmit="return submitUserForm();">
                 <input type="hidden" name="_token" value="mp0gpSYL4XxuAXJ2MNKM9eKJpxrDTsg3i4QIZHdW">
                 <div class="form-group">
                     <div class="custom-icon-field">
@@ -51,8 +50,8 @@
                 <div class="form-group">
                     <button type="submit" class="cmn-btn py-3 w-100">LOGIN NOW</button>
                 </div>
-                <p class="text-center">New to PayLab? <a href="/register" class="base--color">Signup
-                        here...</a></p>
+                <p>New to Digital Bank MW? <a href="/register"> <span class="auth-link">Signup</span>
+                    </a></p>
             </form>
             <div class="account-footer text-center">
                 © Copyright 2023 Digital Bank MW | All right reserved
